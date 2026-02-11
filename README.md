@@ -85,7 +85,7 @@ The application uses SQLite database with the following tables:
 - `email` (TEXT): Email address
 - `tenDangNhap` (TEXT): Username
 - `matKhau` (TEXT): Password
-- `loaiTaiKhoan` (TEXT): Account type (quan ly/nhan vien)
+- `loaiTaiKhoan` (TEXT): Account type (quản lý/nhân viên)
 
 ### LOAIMON (Menu Categories)
 - `maLoai` (INTEGER, PRIMARY KEY): Category ID
