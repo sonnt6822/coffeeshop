@@ -119,4 +119,26 @@ public class NhanVienDao {
         }
         return false;
     }
+
+    public NhanVien getNhanVienByUsername(String tenDangNhap) {
+        SQLiteDatabase database = dbHeper.getReadableDatabase();
+        Cursor cursor = database.rawQuery("SELECT * FROM NHANVIEN WHERE tenDangNhap=?", new String[]{tenDangNhap});
+        if (cursor.getCount() > 0) {
+            cursor.moveToFirst();
+            return new NhanVien(cursor.getInt(0), cursor.getString(1),
+                    cursor.getString(2), cursor.getString(3), cursor.getString(4),
+                    cursor.getString(5), cursor.getString(6));
+        }
+        return null;
+    }
+
+    public boolean capNhatThongTinCaNhan(String tenDangNhap, String hoTen, String sdt, String email) {
+        SQLiteDatabase database = dbHeper.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("hoTen", hoTen);
+        values.put("soDienThoai", sdt);
+        values.put("email", email);
+        long check = database.update("NHANVIEN", values, "tenDangNhap=?", new String[]{tenDangNhap});
+        return check != -1;
+    }
 }
