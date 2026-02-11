@@ -29,6 +29,7 @@ import com.example.coffeeshop.fragment.MonChayNhatFragment;
 import com.example.coffeeshop.fragment.NhanvienFragment;
 import com.example.coffeeshop.fragment.ThoatFragment;
 import com.example.coffeeshop.fragment.ThongKeFragment;
+import com.example.coffeeshop.fragment.ThongTinCaNhanFragment;
 import com.example.coffeeshop.fragment.ThucDonFragment;
 import com.example.coffeeshop.fragment.TrangChuFragment;
 import com.google.android.material.navigation.NavigationView;
@@ -76,6 +77,9 @@ public class HomeActivity extends AppCompatActivity {
                 }
                 else if (item.getItemId() == R.id.mQLNHANVIEN) {
                     fragment = new NhanvienFragment();
+                }
+                else if (item.getItemId() == R.id.mTHONGTINCANHAN) {
+                    fragment = new ThongTinCaNhanFragment();
                 }
                 else if (item.getItemId() == R.id.mDOIMATKHAU) {
                     fragment = new DoiMatKhauFragment();

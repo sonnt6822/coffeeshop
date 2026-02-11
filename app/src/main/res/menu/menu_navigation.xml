@@ -28,6 +28,9 @@
     <item android:title="Người dùng">
 
         <menu>
+            <item android:id="@+id/mTHONGTINCANHAN"
+                android:title="Thông tin cá nhân"
+                android:icon="@drawable/ic_accout"/>
             <item android:id="@+id/mDOIMATKHAU"
                 android:title="Đổi mật khẩu"
                 android:icon="@drawable/ic_lock"/>
