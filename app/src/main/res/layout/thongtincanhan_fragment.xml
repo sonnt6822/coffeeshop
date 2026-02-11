@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="THÔNG TIN CÁ NHÂN"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textColor="#F44336"
         android:textStyle="bold"
         />
@@ -27,7 +27,7 @@
             android:id="@+id/edtHoTen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="20sp"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -44,7 +44,7 @@
             android:id="@+id/edtSoDienThoai"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:inputType="phone"
             />
 
@@ -62,7 +62,7 @@
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:inputType="textEmailAddress"
             />
 
@@ -80,7 +80,7 @@
             android:id="@+id/edtTenDangNhap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:enabled="false"
             />
 
@@ -91,5 +91,5 @@
         android:layout_marginTop="20dp"
         android:id="@+id/btnCapNhat"
         android:text="Cập nhật thông tin"
-        android:textSize="20dp"/>
+        android:textSize="20sp"/>
 </LinearLayout>

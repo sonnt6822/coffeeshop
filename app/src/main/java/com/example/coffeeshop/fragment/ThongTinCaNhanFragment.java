@@ -20,6 +20,8 @@ import com.example.coffeeshop.R;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class ThongTinCaNhanFragment extends Fragment {
+    private static final int MIN_PHONE_LENGTH = 10;
+    
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -66,7 +68,7 @@ public class ThongTinCaNhanFragment extends Fragment {
                 }
 
                 // Validate phone number (basic validation)
-                if (sdt.length() < 10) {
+                if (sdt.length() < MIN_PHONE_LENGTH) {
                     Toast.makeText(requireContext(), "Số điện thoại không hợp lệ", Toast.LENGTH_SHORT).show();
                     return;
                 }
